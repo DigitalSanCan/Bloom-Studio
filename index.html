@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floral Design Assistant MVP</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>🌸 Floral Design Assistant</h1>
+
+<section>
+<h2>Design Brief</h2>
+<label>Occasion <input id="occasion" placeholder="Birthday"></label>
+<label>Style <input id="style" placeholder="Garden"></label>
+<label>Budget <input id="budget" type="number" value="75"></label>
+<label>Container <input id="container" placeholder="Glass Vase"></label>
+</section>
+
+<section>
+<h2>Inventory</h2>
+<textarea id="inventory" rows="8" placeholder="5 White Roses&#10;3 Hydrangea&#10;4 Eucalyptus"></textarea>
+</section>
+
+<section>
+<h2>Customer Notes</h2>
+<textarea id="notes" rows="5" placeholder="Elegant, airy, no lilies..."></textarea>
+</section>
+
+<button onclick="generate()">Generate Design Suggestion</button>
+
+<section id="output"></section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
